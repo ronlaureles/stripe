@@ -8,6 +8,9 @@ PODS:
   - EXFileSystem (4.0.0):
     - UMCore
     - UMFileSystemInterface
+  - EXPaymentsStripe (4.0.0):
+    - Stripe (~> 13.2.0)
+    - UMCore
   - EXPermissions (4.0.0):
     - UMCore
     - UMPermissionsInterface
@@ -61,6 +64,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - Stripe (13.2.0)
   - UMBarCodeScannerInterface (1.0.0)
   - UMCameraInterface (1.0.0)
   - UMConstantsInterface (1.0.0)
@@ -83,6 +87,7 @@ DEPENDENCIES:
   - EXAppLoaderProvider (from `../node_modules/expo-app-loader-provider/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
+  - EXPaymentsStripe (from `../node_modules/expo-payments-stripe/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -111,6 +116,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - Stripe
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -124,6 +130,8 @@ EXTERNAL SOURCES:
   EXFileSystem:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-file-system/ios"
+  EXPaymentsStripe:
+    :path: "../node_modules/expo-payments-stripe/ios"
   EXPermissions:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-permissions/ios"
@@ -178,10 +186,12 @@ SPEC CHECKSUMS:
   EXAppLoaderProvider: a5b88a7e02f92807ad3cd962bb3e0632d71cc5dc
   EXConstants: a338ed187829ab25b8817f84cd84eecc13e64fd4
   EXFileSystem: 18c9980f52e3bd6a28670c17e0d33a9c1584a336
+  EXPaymentsStripe: ebeaab4113afd368333622c0dc747672f81160a2
   EXPermissions: ce3e170052df9d496aa51e1c372080cb2508fb16
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
+  Stripe: 2c69e216061d54d9c538204bb4f58bd597ddfc5b
   UMBarCodeScannerInterface: 53fd3cbf24fe5c58f3ba82ac8c27f0373fbf52fa
   UMCameraInterface: d5a2727e76d6b47e3201f863102c055ddbcc6206
   UMConstantsInterface: 800fb8f95fca9bb2c18ae554e4cb4df4383f6cbf
@@ -196,6 +206,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: f88793bd35248182e15591e0aa5b045132312be0
   yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64
 
-PODFILE CHECKSUM: 4302eefc37a848f4299401c3d53c5bfae289eafd
+PODFILE CHECKSUM: 54214f4677d62adf85136bab5040b7fb6275ee80
 
 COCOAPODS: 1.6.0.beta.2
